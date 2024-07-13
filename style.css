@@ -1,0 +1,81 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body with a background image */
+body {
+    background-image: url(Assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling for the main container heading */
+.container h1 {
+    font-family: "Honk", system-ui; /* Setting custom font */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+    font-size: 4.5rem; /* Adjusting font size */
+    padding-bottom: 0.5rem; /* Adding bottom padding */
+}
+
+/* Styling for the calculator card */
+.card {
+    background: transparent; /* Transparent background */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* Box shadow */
+    row-gap: 2rem; /* Gap between rows */
+    border-color: black; /* Border color */
+    border-width: 2px; /* Border width */
+    border-radius: 10px; /* Border radius */
+    width: 80%; /* Card width */
+    margin-left: 60px; /* Margin left */
+    backdrop-filter: blur(3px); /* Applying backdrop filter with blur */
+}
+
+/* Styling for the calculator display input */
+#calc-display {
+    background: transparent; /* Transparent background */
+    color: rgb(235, 231, 18); /* Text color */
+    line-height: 3em; /* Line height */
+    text-align: right; /* Text alignment */
+    font-size: 2rem; /* Font size */
+}
+
+/* Styling for all buttons */
+.btn {
+    border-radius: 15%; /* Button border radius */
+    margin-bottom: 1rem; /* Bottom margin */
+    background: transparent; /* Transparent background */
+    color: hsla(12, 91%, 49%, 0.801); /* Text color */
+    font-weight: bolder; /* Font weight */
+    font-size: 1.5rem; /* Font size */
+}
+
+/* Styling for operator buttons */
+.operator {
+    color: hsla(233, 76%, 50%, 15); /* Operator button text color */
+}
+
+/* Styling for special buttons */
+.special {
+    color: hsla(190, 50%, 75%, 35); /* Special button text color */
+}
+
+/* Styling for equal button */
+.equal {
+    color: hsla(150, 60%, 80%, 30); /* Equal button text color */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background: #555; /* Dark background on hover */
+}
